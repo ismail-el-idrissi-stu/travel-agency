@@ -281,6 +281,14 @@
   form button:hover {
     background-color: #ffcc00;
   }
+  #errorMessages {
+    color: red;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  input[type="number"], input[type="tel"], input[type="date"], textarea {
+    font-size: 14px;
+  }
 
 
 h1, h2, h3 {
@@ -319,12 +327,108 @@ footer a {
   }
 .footer-h3 {
     background-color: #368ef3d8;
-    border-radius: 20px;
+    border-radius: 19px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.753); 
  
-    
-    
 }
+.theme-btn{
+  background: none;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.theme-btn:hover{
+  background: #f0f0f0;
+}
+body.dark-theme{
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+
+}
+body.dark-theme nav{
+  background-color: #333;
+
+}
+body.dark-theme .theme-btn{
+  color:#f5f5f5;
+}
+#gallery {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border: 2px solid #0078D7;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;  
+  overflow: hidden;   
+  background-color: rgba(0,0,0,0.8);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.modal-content {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal img {
+  max-width: 100%;     
+  max-height: 100%;     
+  width: auto;          
+  height: auto;   
+  display: block;      
+     
+}
+
+
+
 
   
     

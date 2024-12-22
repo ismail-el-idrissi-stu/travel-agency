@@ -20,6 +20,10 @@
           <li><a href="about.html">About</a></li>
           <li><a href="cart.html">Cart</a></li>
           <li><a href="register.html">Register</a></li>
+          <li>
+            <button id="theme-toggle" class = "theme-btn"> Dark Mode
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -66,6 +70,23 @@
       </div>
     </div>
   </section>
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+      <img src="img/image1.jpg" class="thumbnail" alt="Gallery Image 1">
+      <img src="img/image2.jpg" class="thumbnail" alt="Gallery Image 2">
+      <img src="img/image3.jpg" class="thumbnail" alt="Gallery Image 3">
+      <img src="img/image4.jpg" class="thumbnail" alt="Gallery Image 4">
+      <img src="img/image5.jpg" class="thumbnail" alt="Gallery Image 5">
+      <img src="img/image6.jpg" class="thumbnail" alt="Gallery Image 6">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img id="modal-img" class="modal-content">
+        <div id="caption"></div>
+    </div>
+</section>
  
   
   
@@ -80,5 +101,7 @@
     </ul>
     <p>&copy;Fundamentals of Web Development | Travel Agency Project | </p>
   </footer>
+  <script src="javascript/file.js"></script>
+  <script src="javascript/modals.js"></script>
 </body>
 </html>
