@@ -29,13 +29,11 @@
     <section class="registration">
       <h1>Book Your Trip</h1>
       <p>Fill out the form below to plan your unforgettable journey through Bosnia and Herzegovina!</p>
-
-      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <form action="https://jsonplaceholder.typicode.com/posts" id="travelForm" action="#" method="POST">
         <div class="form-group">
           <label for="name">Full Name:</label>
           <input type="text" id="name" name="name" placeholder="e.g., Amira Hadžić" required>
         </div>
-
         <div class="form-group">
           <label for="email">Email Address:</label>
           <input type="email" id="email" name="email" placeholder="e.g., example@mail.com" required>
@@ -87,6 +85,7 @@
         </div>
 
         <button type="submit" class="btn">Submit</button>
+        <div id="errorMessages"></div>
       </form>
     </section>
   </main>
@@ -100,5 +99,6 @@
     </ul>
     <p>&copy;Fundamentals of Web Development | Travel Agency Project | </p>
   </footer>
+  <script src= "javascript/validation.js"></script>
 </body>
 </html>
